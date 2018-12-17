@@ -4,62 +4,76 @@ body{
   font-family: 'Libre Baskerville';
 }
 
-#brookings {
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+#backgroundvideo {
   position: fixed;
-  top: -15%;
-  left: -10%;
+  top: 0%;
+  left: 0%;
   width: 100%;
   height: 100%;
+
 }
 
-#titleimg{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}
-
-#wustlname{
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  top: 50%;
-  left: 50%;
-  transform: translateX(-35%);
-  border-radius: 5px;
-}
 
 
 #wrapper{
-  position: relative;
+  position:  relative;
   margin-top: 57%;
+  height: 590px;
   width: 100%;
-  height: 3450px;
   background-color: white;
 
 }
 
 
 #navigation {
-
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  border-bottom: 0.3px solid lightgray;
-  background-color: lightgray;
-  z-index: 100;
+    margin-top:-1vw;
+    margin-bottom:-1vw;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 0.3px solid black;
+    background-color: black;
+    z-index: 900;
+    color:white;
 
 }
+
+ul#yoon {
+list-style-type: none;
+}
+
 
 #navigation a{
   padding-right: 10px;
   padding-left: 10px;
   text-decoration: none;
-  color: black;
   font-size: 18px;
   display: inline-block;
   text-align: center;
@@ -77,18 +91,20 @@ body{
   padding-top: 10px;
   margin-right: 40px;
   float: right;
+  font: white;
+  z-index: 100;
 }
-#wustl_logo{
+#logo{
   height: 40px;
 }
 
 
 .challenge {
-  margin-top: 90px;
+  margin-top: 30px;
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
+  height: 150px;
   text-align: center;
 
 }
@@ -103,48 +119,11 @@ body{
   color: #776f6f;
 }
 
-#photowall{
-
-  width: 100%;
-  height: 800px;
-}
-#photowall img{
-  width: 420px;
-  height: 420px;
-}
-
-.top{
-  display: flex;
-  width: 100%;
-  height: 420px;
-  justify-content: space-between;
-}
-
-.bottom{
-  display: flex;
-  width: 100%;
-  height: 420px;
-  justify-content: space-between;
-}
 
 .box{
-  height: 420px;
-  width: 420px;
+  align-content: center;
 }
 
-.box1{
-  height: 420px;
-  width: 420px;
-  background-color: #3d3d3d;
-}
-.icon{
-  text-align: center;
-  color: #9e9999;
-  margin-top: 120px;
-  margin-bottom: 20px;
-  font-size: 40px;
-
-}
 .header{
   text-align: center;
   color: white;
@@ -206,9 +185,9 @@ body{
   width: 200px;
 }
 
-#majors{
+#text{
   width: 95%;
-  height: 900px;
+  height: 500px;
   border-top: 1px lightgray solid;
   margin-left: auto;
   margin-right: auto;
@@ -340,10 +319,12 @@ body{
 }
 
 #washu{
+  text-align: center;
+  margin:auto;
   width: 100%;
-  height: 350px;
+  height: 180px;
   background-color: #353535;
-  padding-top: 50px;
+  padding-top: 20px;
   color: white;
 }
 
@@ -353,21 +334,23 @@ body{
   margin-left: auto;
   margin-right: auto;
   height: 300px;
-  display: flex;
   justify-content: space-between;
 }
 #boxes{
   width: 400px;
-  height: 300px;
+  margin: auto;
+
 }
 
 #snsicons{
-
-  width: 305px;
+  width: 400px;
+  align-items: center;
+  margin:auto;
   height: 50px;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+
 }
 
 .snsicons{
@@ -389,8 +372,7 @@ body{
 .boxes{
   font-family: 'Roboto',sans-serif;
   width: 250px;
-
-  height: 300px;
+  margin:auto;
 }
 
 .listheader{
@@ -429,23 +411,17 @@ body{
 
 @media only screen and (max-width: 1200px) {
 
-  #brookings {
+  #backgroundvideo {
     display: none;
   }
 
-  #titleimg{
-    display: none;
-  }
 
-  #wustlname{
-    display: none;
-  }
 
   #wrapper{
     display: absolute;
     margin-top: -50px;
     width: 100%;
-    height: 3200px;
+    height: 1200px;
     background-color: white;
   }
 
@@ -454,9 +430,11 @@ body{
     position: sticky;
     top: 0;
     width: 100%;
-    border-bottom: 0.3px solid lightgray;
-    background-color: lightgray;
+    border-bottom: 0.3px solid black;
+    background-color: black;
     z-index: 100;
+    color:white;
+
 
   }
 
@@ -482,6 +460,8 @@ body{
     padding-top: 10px;
 
     float: right;
+    font: white;
+
   }
   #wustl_logo{
     height: 40px;
@@ -493,7 +473,7 @@ body{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    height: 200px;
+    height: 150px;
     text-align: center;
 
   }
@@ -503,33 +483,14 @@ body{
     color: #bc1c1c;
   }
 
+
   .body{
-    font-size: 18px;
+    font-size: 12px;
     color: #776f6f;
+    height:500px;
   }
 
-  #photowall{
-    width: 100%;
-    height: 800px;
-  }
 
-  #photowall img{
-    display: none;
-  }
-
-  .top{
-    display: flex;
-    width: 100%;
-    height: 420px;
-    justify-content: space-between;
-  }
-
-  .bottom{
-    display: flex;
-    width: 100%;
-    height: 420px;
-    justify-content: space-between;
-  }
 
   .box{
     height: 420px;
@@ -578,20 +539,6 @@ body{
     cursor: pointer;
   }
 
-  #school{
-
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #school img{
-    height: 100px;
-    width: 100px;
-  }
 
   .boxicon{
 
@@ -752,12 +699,14 @@ body{
   }
 
   #washu{
+    text-align: center;
+    margin:auto;
     width: 100%;
-    height: 350px;
+    height: 180px;
     background-color: #353535;
-    padding-top: 50px;
+    padding-top: 20px;
     color: white;
-  }
+    }
 
   #area{
     width: 90%;
@@ -765,7 +714,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     height: 300px;
-    display: flex;
     justify-content: space-between;
   }
   #boxes{
@@ -788,5 +736,6 @@ body{
     width: 100%;
     height: 25px;
     background-color: rgba(153, 10, 10, 1);
+    margin-bottom: -30px;
   }
 }

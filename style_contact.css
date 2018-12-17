@@ -39,20 +39,10 @@ a:active {
 
 }
 
-#titleimg{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}
 
 
 #wrapper{
-  position: relative;
+  position:  relative;
   margin-top: 57%;
   height: 590px;
   width: 100%;
@@ -344,7 +334,6 @@ list-style-type: none;
   margin-left: auto;
   margin-right: auto;
   height: 300px;
-  display: flex;
   justify-content: space-between;
 }
 #boxes{
@@ -725,7 +714,6 @@ list-style-type: none;
     margin-left: auto;
     margin-right: auto;
     height: 300px;
-    display: flex;
     justify-content: space-between;
   }
   #boxes{
@@ -744,7 +732,7 @@ list-style-type: none;
     padding-top: 5px;
     color: white;
     text-align: center;
-
+    position: fixed;
     width: 100%;
     height: 25px;
     background-color: rgba(153, 10, 10, 1);
