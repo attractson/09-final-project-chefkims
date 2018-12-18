@@ -208,6 +208,7 @@ list-style-type: none;
   display: inline-block;
   font-size: 25px;
   padding-top: 10px;
+  color: gray;
 }
 
 .snsicons:hover{
