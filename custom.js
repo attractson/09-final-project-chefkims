@@ -6,7 +6,7 @@ $( document ).ready(function(){
     resolution: 'standard_resolution',
     accessToken: '1627406569.1677ed0.a7827ca37f4f4e1e900972d070412179',
     sortBy: 'most-recent',
-    template: '<div class = "col-3 gallery"><a href="{{image}}" titl="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a>',
+    template: '<div class = "col-3 gallery"><a href="{{image}}" titl="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
 
   });
   userFeed.run();
