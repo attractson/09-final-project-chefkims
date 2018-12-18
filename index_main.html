@@ -14,6 +14,9 @@
 		#wrapper{
 			height: 400px;
 		}
+		.right{
+			margin-bottom: 1px;
+		}
 	</style>
 
 	<body>
@@ -21,7 +24,7 @@
 		<div id="wrapper">
 			<div id = "navigation">
         <a href = "index_landing.html" class="left"><img id="logo" src="bv_1.PNG" alt="logo"></a>
-				<a href = "index_contact.html" class="right">Contact & Recruit</a>
+				<a href = "index_contact.html" 	class="right">Contact & Recruit</a>
 				<a href = "index_exhibition.html" class="right">Exhibition</a>
 				<a href = "index_artist.html" class="right">Artists</a>
         <a href = "index_main.html" class="right">About</a>
@@ -29,6 +32,8 @@
 
 					<div id="text">
 	            <div class="challenge">
+								<button onclick="changeeng()" value="English" id="translate"> English </button>
+
 	               <p class="heading">
 	                  Creative Agency for Artists
 	               </p>
@@ -41,18 +46,18 @@
 	            </div>
           </div>
 
-            <button onclick="changeeng()" value="English" id="translate"> English </button>
        </div>
-
+			 <br>
 			 <div id = "backgroundvideo">
-         <iframe width="1268" height="713.25" src="https://www.youtube.com/embed/fwBDf-IKJ8M?autoplay=1&rel=0&showinfo=0&controls=0&autohide=1" frameborder="0"
+         <iframe width="900" height="600" src="https://www.youtube.com/embed/fwBDf-IKJ8M?autoplay=1&rel=0&showinfo=0&controls=0&autohide=1" frameborder="0"
        allowfullscreen></iframe>
       </div>
-
+			<br>
 			<div class="container">
 				<div id = "instafeed" class="row">
 				</div>
 			</div>
+			<br>
 
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script type="text/javascript" src="instafeed.min.js"></script>
