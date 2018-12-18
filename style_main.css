@@ -1,7 +1,7 @@
 body{
   margin: 0;
   background-color: #F5F5F5;
-  font-family: 'Libre Baskerville';
+  font-family: 'Roboto', sans-serif;
 }
 
 a:link {
@@ -29,13 +29,48 @@ a:active {
 }
 
 
+#EnterButton{
+  border: 1px black solid;
+  border-radius: 5px;
+  background-color: lightgray;
+  height: 25px;
+  padding-top: 5px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: black;
+}
 
-#backgroundvideo {
-  position: fixed;
-  top: 0%;
-  left: 0%;
+#EnterButton:hover{
+  transition: 1s;
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+#backgroundImage{
+  margin-top: 200px;
+  height: 500px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#backgroundImage img{
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   height: 100%;
+}
+
+#backgroundvideo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -43,19 +78,13 @@ a:active {
 
 #wrapper{
   position:  relative;
-  margin-top: 57%;
-  height: 590px;
   width: 100%;
-  background-color: white;
-
+  background-color: #F5F5F5;
 }
 
 
 #navigation {
-    margin-top:-1vw;
-    margin-bottom:-1vw;
     overflow: hidden;
-    position: sticky;
     top: 0;
     width: 100%;
     border-bottom: 0.3px solid black;
@@ -64,6 +93,26 @@ a:active {
     color:white;
 
 }
+
+#floater{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#imagecontainer{
+  width: 600px;
+  height: 900px;
+}
+
+#description{
+  font-size: 20px;
+  color: #776f6f;
+}
+
+
 
 ul#yoon {
 list-style-type: none;
@@ -94,6 +143,12 @@ list-style-type: none;
   font: white;
   z-index: 100;
 }
+
+#text{
+  height: 100%;
+
+}
+
 #logo{
   height: 40px;
 }
@@ -101,7 +156,7 @@ list-style-type: none;
 
 .challenge {
   margin-top: 30px;
-  width: 900px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   height: 150px;
@@ -112,6 +167,8 @@ list-style-type: none;
 .heading{
   font-size: 30px;
   color: #bc1c1c;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .body{
@@ -131,217 +188,6 @@ list-style-type: none;
 
 }
 
-.textarea{
-  border: 1px white solid;
-  text-align: center;
-  color: #9e9999;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  padding-top: 10px;
-  font-size: 15px;
-  height: 30px;
-  width: 160px;
-  border-radius: 5px;
-}
-
-.textarea:hover{
-  color: white;
-  background-color: #191818;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-#school{
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#school img{
-  height: 200px;
-  width: 200px;
-}
-
-.boxicon{
-
-  height: 300px;
-  width: 200px;
-}
-
-.iconimg{
-  height: 200px;
-  width: 200px;
-}
-
-.icondescription{
-  font-family: 'Roboto', sans-serif;
-  margin-top: 20px;
-  text-align: center;
-  height: 200px;
-  width: 200px;
-}
-
-#text{
-  width: 95%;
-  height: 500px;
-  border-top: 1px lightgray solid;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-#majorbuttons{
-  display: block;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.majorbuttons{
-  border: 1px solid rgba(153, 10, 10, 1);
-  height: 30px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  color: white;
-  background-color: rgba(153, 10, 10, 1);
-}
-
-.majorbuttons:hover{
-  background-color: white;
-  color: rgba(153, 10, 10, 1);
-  cursor: pointer;
-}
-
-#listing{
-  font-family: 'Roboto', sans-serif;
-  display: block;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  height: 500px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.schools{
-  height: 500px;
-  width: 370px;
-}
-
-.underline{
-  border-bottom: 1px lightgray solid;
-  height: 30px;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
-.schoollist{
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.schoollist li{
-  padding-bottom: 15px;
-  font-size: 17px;
-  color: rgba(153, 10, 10, 1);
-  font-weight: bold;
-}
-
-.schoollist li:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-#sentence{
-
-  height: 120px;
-  color: #1ca301;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 30px;
-}
-#sentence:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
-#picture{
-
-  height: 350px;
-}
-
-
-#apply{
-  width: 100%;
-  height: 300px;
-
-  background-color: #bc0101;
-}
-
-#container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 70px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.button{
-  font-family: 'Roboto',sans-serif;
-  width: 500px;
-  height: 90px;
-  border: 1px white solid;
-  text-align: center;
-  background-color: rgba(153, 10, 10, 1);
-  padding-top: 60px;
-  color: white;
-  border-radius: 5px;
-  font-size: 25px;
-}
-
-.button:hover{
-  text-decoration: underline;
-  background-color: #a80d0d;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-#washu{
-  text-align: center;
-  margin:auto;
-  width: 100%;
-  height: 180px;
-  background-color: #353535;
-  padding-top: 20px;
-  color: white;
-}
-
-#area{
-  width: 1200px;
-
-  margin-left: auto;
-  margin-right: auto;
-  height: 300px;
-  justify-content: space-between;
-}
-#boxes{
-  width: 400px;
-  margin: auto;
-
-}
-
 #snsicons{
   width: 400px;
   align-items: center;
@@ -350,11 +196,12 @@ list-style-type: none;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  color: gray;
 
 }
 
 .snsicons{
-  border: 1px white solid;
+  border: 1px black solid;
   width: 50px;
   height: 40px;
   border-radius: 50%;
@@ -369,34 +216,6 @@ list-style-type: none;
   color: black;
 }
 
-.boxes{
-  font-family: 'Roboto',sans-serif;
-  width: 250px;
-  margin:auto;
-}
-
-.listheader{
-  height: 30px;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
-.secondlist{
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.secondlist li{
-  padding-bottom: 10px;
-  font-size: 17px;
-  color: white;
-
-}
-
-.secondlist li:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 #footer{
   padding-top: 5px;
@@ -408,6 +227,7 @@ list-style-type: none;
   background-color: rgba(153, 10, 10, 1);
 }
 
+/*
 
 @media only screen and (max-width: 1200px) {
 
@@ -738,4 +558,4 @@ list-style-type: none;
     background-color: rgba(153, 10, 10, 1);
     margin-bottom: -30px;
   }
-}
+} */

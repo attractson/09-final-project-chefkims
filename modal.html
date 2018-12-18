@@ -1,28 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<head>
+   <head>
     <link href="modal.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
-    <?php
-    $name = trim(strip_tags($_POST['name']));
-    $email = trim(strip_tags($_POST['email']));
-    $comment = htmlentities($_POST['comment']);
-
-    $subject = "Event form submitted!";
-    $to = 'donghyunkim@wustl.edu';
-
-    $body = $comment;
-
-    $headers = "From: $email\r\n";
-    $headers .= "Content-type: text/html\r\n";
-
-    mail($to, $subject, $body, $headers);
-
-
-
-    ?>
 
     <div id="modal_wrapper">
     <div id="modal_window">
@@ -34,14 +16,16 @@
 
     <p>Complete the form below for RSVP:</p>
 
-    <form id="modal_feedback" method="post" action="" accept-charset="UTF-8" method="post">
+    <form id="Modal" method="post" action="https://script.google.com/macros/s/AKfycbygLaasxdSjuDXchkTKsW_VXHQ0W4-nAF1Q_uwg/exec" accept-charset="UTF-8" method="post">
     <p><label for="name">Your Name<strong>*</strong><br>
     <input class="text" type="text" id="name" autofocus required size="48" name="name" value=""></label></p>
     <p><label for="Email">Email Address<strong>*</strong><br>
       <input class="text" type="email" id="email" required title="Please enter a valid email address" size="48" name="email" value=""></label></p>
     <p><label for="comment">Comment<br><textarea required name="comment" id="comment" cols="29" rows="8"></textarea></label></p>
 
-    <p><input class="text" type="submit" name="comment" value="Join the event!"></p>
+    <p><input class="text" type="submit" name="comment" value="Send"></p>
+      <input type="reset" value="Reset">
+
     </form>
 
 
