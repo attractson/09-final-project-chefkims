@@ -13,9 +13,6 @@ function changeeng() {
   } else {
     z.firstChild.data = "English";
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 77bcb0cf8523d111d17edeec72557a2b7f513ce7
 
 }
